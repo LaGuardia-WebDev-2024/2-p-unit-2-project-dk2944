@@ -28,7 +28,20 @@ Select ONE Additional Feature to Add
       #nice-hotel {
         color: rgb(58, 109, 140);
       }
-      
+      #tropical {
+        color: rgb(100, 57, 255);
+      }
+
+      .luxourious {
+        color: rgb(67, 56, 120);
+        background-color: rgb(228, 177, 240);
+      }
+      .dream {
+        color: rgb(137, 103, 179);
+      }
+      img {
+        border: 5px solid #3a1078;
+      }
     </style>
   </head>
   <body>
@@ -37,15 +50,16 @@ Select ONE Additional Feature to Add
     </h1>
     <p>
       Based on my experience, I will show you what a
-      <font size="+2"> dream vacation </font> in a tropical place should look
-      like!
+      <font class="dream" size="+2"> dream vacation </font> in a tropical place
+      should look like!
     </p>
 
     <ul>
       <li>
         First off, you want to make sure that the place has a
-        <em> beautiful, clean, turquoise colored and white sand beach</em>.
-        Ideally, it should look like this:
+        <em id="tropical">
+          beautiful, clean, turquoise colored and white sand beach</em
+        >. Ideally, it should look like this:
       </li>
     </ul>
 
@@ -58,7 +72,8 @@ Select ONE Additional Feature to Add
 
     <ul>
       <li>
-        It is important to sleep in a clean, luxourious environment. Imagine
+        It is important to sleep in a clean,
+        <strong class="luxourious">luxourious </strong> environment. Imagine
         waking up to this view?
       </li>
     </ul>
@@ -73,7 +88,9 @@ Select ONE Additional Feature to Add
     <ul>
       <li>
         it is significant that the food you are eating is
-        <strong>delicious </strong>, maybe a buffet that looks like this?:
+        <strong>delicious </strong>, maybe a
+        <strong class="luxourious"> luxourious</strong> buffet that looks like
+        this?:
       </li>
     </ul>
     <img
