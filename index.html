@@ -1,101 +1,61 @@
-<!--
+<!-- Unit 6 Project
 Requirements
-[  ] Two Element Selectors
-[  ] Two ID Selectors
-[  ] Two Class Selectors
-[  ] Three Images
+[  ] three different shapes
+[  ] three different RGB colors
+[  ] three comments 
+[  ] three new HTML elements 
 
-Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Include a Background Image
-[ no ] Feature 2 - Include Border Radius CSS Property
-[ no ] Feature 3 - Include Horizontal Line
-[ no ] Feature 4 - Embed YouTube Video
-[ no ] Feature 5 - Include Border CSS Property
+Select ONE Additional 
+[ no ] Feature 1 - three different strokeWeight() commands
+[ no ] Feature 2 - Add a second <canvas>
+[ no ] Feature 3 - Change Tab Title & Image
+[ no ] Feature 4 - Typewriter Animation
+[ no ] Feature 5 - Gradient Background
 -->
 
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Unit 2 Project</title>
+    <meta name="viewport" content="width=device-width" />
+    <title>My pizza</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://thumbs.dreamstime.com/b/pizza-slice-hot-tasty-fast-food-portion-piece-triangle-shape-vector-illustration-306388573.jpg"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
     <style>
-      h1 {
-        color: rgb(79, 117, 255);
-      }
-      body {
-        background-color: rgb(167, 230, 255);
-      }
-      #nice-hotel {
-        color: rgb(58, 109, 140);
-      }
-      #tropical {
-        color: rgb(100, 57, 255);
-      }
-
-      .luxourious {
-        color: rgb(67, 56, 120);
-        background-color: rgb(228, 177, 240);
-      }
-      .dream {
-        color: rgb(137, 103, 179);
-      }
-      img {
-        border: 5px solid #3a1078;
-      }
+      .pizza{color:rgb(134, 210, 147);
+         start{color:rgb(134, 210, 147)
     </style>
   </head>
+
   <body>
-    <h1>
-      <strong> How to plan the perfect tropical vacation </strong>
-    </h1>
-    <p>
-      Based on my experience, I will show you what a
-      <font class="dream" size="+2"> dream vacation </font> in a tropical place
-      should look like!
-    </p>
-
-    <ul>
-      <li>
-        First off, you want to make sure that the place has a
-        <em id="tropical">
-          beautiful, clean, turquoise colored and white sand beach</em
-        >. Ideally, it should look like this:
-      </li>
-    </ul>
-
+    <div class="container">
+      <div>
+        <h1 class="pizza">here's my pizza</h1>
+        <h2 id="start">How it started.</h2>
+        <img
+          class="pic"
+          src="https://thumbs.dreamstime.com/b/pizza-slice-hot-tasty-fast-food-portion-piece-triangle-shape-vector-illustration-306388573.jpg"
+        />
+      </div>
+      <div>
+        <h2 id="end">How it ended.</h2>
+        <canvas id="myCanvas" data-processing-sources="myP5Code.pde"> </canvas>
+      </div>
+    </div>
     <img
-      src="https://i.pinimg.com/736x/f6/d8/83/f6d883506e9c3cd8183fdbc73d409b09.jpg"
-      width="350"
+      src="https://assets.surlatable.com/m/15a89c2d9c6c1345/72_dpi_webp-REC-283110_Pizza.jpg"
+      width="250"
     />
-
-    <h2 id="nice-hotel">Make sure to have a nice hotel!</h2>
-
-    <ul>
-      <li>
-        It is important to sleep in a clean,
-        <strong class="luxourious">luxourious </strong> environment. Imagine
-        waking up to this view?
-      </li>
-    </ul>
-
     <img
-      src="https://cache.marriott.com/content/dam/marriott-renditions/MLEWH/mlewh-wow-oceanhaven-1800-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=856px:*"
-      width="400"
-    />
-
-    <h1>Last but not least, the most important part, <mark>food!</mark></h1>
-
-    <ul>
-      <li>
-        it is significant that the food you are eating is
-        <strong>delicious </strong>, maybe a
-        <strong class="luxourious"> luxourious</strong> buffet that looks like
-        this?:
-      </li>
-    </ul>
-    <img
-      src="https://b.zmtcdn.com/data/collections/5cb59fb7cfd036e269e5bb0d46206184_1709815728.png"
-      width="400"
+      src="https://cdn.loveandlemons.com/wp-content/uploads/2024/09/sheet-pan-pizza.jpg"
+      width="250"
     />
   </body>
 </html>
+
+<!--- Taken From Khan Academy Intro to JS: Drawing & Animation --->
